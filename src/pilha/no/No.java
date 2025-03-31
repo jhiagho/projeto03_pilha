@@ -1,14 +1,14 @@
 package pilha.no;
 
-public class no {
+public class No {
 
     private int dado;
     private No reNo= null;
 
-    public no() {
+    public No() {
     }
 
-    public no(int dado) {
+    public No(int dado) {
         this.dado = dado;
     }
 
@@ -28,5 +28,11 @@ public class no {
         this.reNo = reNo;
     }
 
-
+    @Override
+    public String toString() {
+        return "No{" +
+                "dado=" + dado +
+                ", reNo=" + reNo +
+                '}';
+    }
 }
